@@ -1,0 +1,42 @@
+# Sistema de Controle de Estoque
+
+Este é um projeto de Sistema de Controle de Estoque utilizando SQL para gerenciar produtos, fornecedores e pedidos de reposição. O sistema é capaz de realizar as seguintes operações:
+
+- **Gerenciamento de Fornecedores:** Inserção, consulta e exclusão de fornecedores.
+- **Gerenciamento de Produtos:** Inserção, consulta, atualização de estoque e exclusão de produtos.
+- **Pedidos de Reposição:** Registro de pedidos de reposição de estoque e atualização do status do pedido.
+
+## Funcionalidades
+
+1. **Criação de banco de dados e tabelas:**
+   - Tabela `Fornecedores`: Armazena informações sobre os fornecedores.
+   - Tabela `Produtos`: Armazena informações sobre os produtos, como nome, preço, quantidade em estoque e o fornecedor.
+   - Tabela `PedidosReposicao`: Armazena os pedidos de reposição de produtos.
+
+2. **Inserção de dados:**
+   - Insere registros para fornecedores, produtos e pedidos de reposição.
+
+3. **Consultas:**
+   - Consulta todos os produtos em estoque.
+   - Consulta todos os pedidos de reposição.
+   - Consulta todas as informações dos fornecedores.
+
+4. **Atualizações:**
+   - Atualiza o estoque após o recebimento de um pedido de reposição.
+   - Atualiza o status dos pedidos de reposição após conclusão.
+
+5. **Exclusão de registros:**
+   - Exclui produtos descontinuados (com exclusão em cascata para os pedidos relacionados).
+   - Exclui fornecedores que não fazem mais parte da empresa.
+
+## Pré-requisitos
+
+- MySQL ou outro sistema de banco de dados compatível com SQL.
+- Cliente de banco de dados ou ferramenta de linha de comando para executar os scripts SQL.
+
+## Instruções de Uso
+
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/usuario/sistema-controle-estoque.git
+   cd sistema-controle-estoque
