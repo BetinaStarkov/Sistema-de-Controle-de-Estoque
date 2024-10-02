@@ -1,0 +1,31 @@
+
+---
+
+### **.gitignore**
+
+```plaintext
+# Evitar arquivos do sistema operacional
+.DS_Store
+Thumbs.db
+
+# Evitar logs e arquivos temporários
+*.log
+*.tmp
+*.bak
+
+# Configurações específicas de banco de dados ou ferramenta
+*.sql~
+*.db
+*.sqlite3
+
+# Evitar arquivos do ambiente de desenvolvimento (IDE)
+.idea/
+.vscode/
+
+# Excluir credenciais ou arquivos sensíveis
+.env
+*.config
+*.json
+
+# Evitar arquivos de backup gerados pelo editor de texto
+*~
